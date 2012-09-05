@@ -503,7 +503,7 @@ if ( typeof window.console.emulated === 'undefined' ) {
 
 						// Append and $iframe to the document, as $iframes are required for back and forward
 						// Create a hidden $iframe for hash change tracking
-						History.$iframe = $('<iframe id="jquery-history-iframe" style="display: none;"></$iframe>').prependTo(document.body)[0];
+						History.$iframe = $('<iframe id="jquery-history-iframe" style="display: none;"></iframe>').prependTo(document.body)[0];
 
 						// Create initial history entry
 						History.$iframe.contentWindow.document.open();
